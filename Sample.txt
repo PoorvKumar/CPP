@@ -1,0 +1,10 @@
+This is writing in a file using an object of type class ofstream, 
+and calling parammeterised constructor of class ofstream
+ofstream outfile(Sample.txt); -> where other parameter is default parameter
+which can be ios::trunc(default)->to truncate(remove contents from original file)
+or ios::app (append)-> to append new data to original data of file
+new text appended to Sample.txt by constructing another object of type class ofstream and opening Sample.txt in ios::app mode
+i.e, passing other parameter as ios::app when calling parameterised constructor of class ofstream which takes default parameter as ios::trunc
+
+
+ofstream Outfile(Sample.txt,ios::app);
